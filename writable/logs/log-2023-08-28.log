@@ -1,0 +1,218 @@
+CRITICAL - 2023-08-28 07:34:25 --> Invalid file: home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Main.php(9): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 07:34:42 --> Invalid file: home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Main.php(9): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 07:39:52 --> Invalid file: layout/main_layout.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/main_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Main.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 07:39:53 --> Invalid file: layout/main_layout.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/main_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Main.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 07:39:54 --> Invalid file: layout/main_layout.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/main_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Main.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 07:40:54 --> Invalid file: layouts/main_layout.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main_layout.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Main.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 08:36:42 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 7.
+ 1 APPPATH\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 08:36:46 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 7.
+ 1 APPPATH\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 08:37:31 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 7.
+ 1 APPPATH\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 09:23:33 --> Undefined property: stdClass::$job
+in APPPATH\Views\home.php on line 31.
+ 1 APPPATH\Views\home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$job', 'APPPATH\\Views\\home.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 09:24:28 --> Undefined property: stdClass::$job
+in APPPATH\Views\home.php on line 31.
+ 1 APPPATH\Views\home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$job', 'APPPATH\\Views\\home.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 09:24:45 --> Undefined property: stdClass::$job
+in APPPATH\Views\home.php on line 31.
+ 1 APPPATH\Views\home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$job', 'APPPATH\\Views\\home.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 09:25:00 --> Undefined property: stdClass::$job
+in APPPATH\Views\home.php on line 31.
+ 1 APPPATH\Views\home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$job', 'APPPATH\\Views\\home.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 12:25:38 --> Undefined index: REQUESTED_METHOD
+in APPPATH\Controllers\Main.php on line 28.
+ 1 APPPATH\Controllers\Main.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: REQUESTED_METHOD', 'APPPATH\\Controllers\\Main.php', 28, [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 12:33:29 --> Undefined index: REQUESTED_METHOD
+in APPPATH\Controllers\Main.php on line 28.
+ 1 APPPATH\Controllers\Main.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: REQUESTED_METHOD', 'APPPATH\\Controllers\\Main.php', 28, [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-28 12:33:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* jobs(jobs, datetime_created) VALUES(:job:, NOW())' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO * j...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO * j...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO * j...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO * j...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-28 12:33:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* jobs(jobs, datetime_created) VALUES(:job:, NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-28 12:33:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* jobs(jobs, datetime_created) VALUES(:job:, NOW())' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO * j...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO * j...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO * j...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO * j...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-28 12:33:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* jobs(jobs, datetime_created) VALUES(:job:, NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO * jobs(jobs, datetime_created) VALUES(:job:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-28 12:34:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':job:, NOW())' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-28 12:34:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':job:, NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:job:, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(:job:, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(:job:, NOW())')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:job:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 14:24:05 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get_post()
+in APPPATH\Controllers\Main.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

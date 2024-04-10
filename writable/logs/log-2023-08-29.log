@@ -1,0 +1,898 @@
+CRITICAL - 2023-08-29 06:52:40 --> Undefined property: stdClass::$id_job
+in APPPATH\Views\home.php on line 37.
+ 1 APPPATH\Views\home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_job', 'APPPATH\\Views\\home.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 06:52:43 --> Undefined property: stdClass::$id_job
+in APPPATH\Views\home.php on line 37.
+ 1 APPPATH\Views\home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_job', 'APPPATH\\Views\\home.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(11): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:10:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHEERE id_job = :id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:10:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHEERE id_job = :id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:10:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHEERE id_job = :id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:10:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHEERE id_job = :id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:12:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHEERE id_job = :id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:12:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHEERE id_job = :id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHEERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:12:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:12:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:14:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:14:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:14:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:14:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:14:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id_job = :id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:14:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id_job = :id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:14:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id_job = :id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:14:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id_job = :id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW(),
+            WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:15:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM jobs WHERE id_job = :id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:15:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM jobs WHERE id_job = :id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:15:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM jobs WHERE id_job = :id_job:' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:15:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM jobs WHERE id_job = :id_job:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            SELECT * FROM jobs WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:16:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '8'' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:16:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '8'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = :id_jobs:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:17:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '8'' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:17:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '8'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = :id_jobs:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:17:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '8'' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:17:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '8'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'8\'
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = :id_jobs:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:17:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '9'' at line 4 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->jobDone('9')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:17:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id_jobs = '9'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'9\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'9\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = \'9\'
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET datetime_finished = NOW(),
+            datetime_updated = NOW()
+            id_jobs = :id_jobs:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->jobDone('9')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:18:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(47): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->editJob('8')
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:18:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id_job:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT * FROM jobs WHERE id_job = :id_job:
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT * FROM jobs WHERE id_job = :id_job:
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT * FROM jobs WHERE id_job = :id_job:
+        ')
+ 4 APPPATH\Controllers\Main.php(47): CodeIgniter\Database\BaseConnection->query('
+        SELECT * FROM jobs WHERE id_job = :id_job:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJob('8')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:19:09 --> Undefined offset: 0
+in APPPATH\Controllers\Main.php on line 52.
+ 1 APPPATH\Controllers\Main.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Main.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJob()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:25:43 --> Undefined offset: 0
+in APPPATH\Controllers\Main.php on line 68.
+ 1 APPPATH\Controllers\Main.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Main.php', 68, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJob()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:25:45 --> Undefined variable: job
+in APPPATH\Views\edit_job.php on line 26.
+ 1 APPPATH\Views\edit_job.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\edit_job.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_job.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('edit_job', [], true)
+ 5 APPPATH\Controllers\Main.php(69): view('edit_job', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJob('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:25:48 --> Undefined variable: job
+in APPPATH\Views\edit_job.php on line 26.
+ 1 APPPATH\Views\edit_job.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\edit_job.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_job.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('edit_job', [], true)
+ 5 APPPATH\Controllers\Main.php(69): view('edit_job', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJob('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:26:29 --> Undefined variable: jobs
+in APPPATH\Views\edit_job.php on line 26.
+ 1 APPPATH\Views\edit_job.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\edit_job.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_job.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('edit_job', [], true)
+ 5 APPPATH\Controllers\Main.php(69): view('edit_job', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJob('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:36:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':job:,
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL' at line 2 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(88): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->editJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:36:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':job:,
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET job = :job:,
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET job = :job:,
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET job = :job:,
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ')
+ 4 APPPATH\Controllers\Main.php(88): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET job = :job:,
+            datetime_updated = NOW()
+            WHERE id_jobs = :id_jobs:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:36:57 --> mysqli_sql_exception: Unknown column 'job' in 'field list' in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(88): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->editJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:36:57 --> Unknown column 'job' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET job = \'nao sei\',
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET job = \'nao sei\',
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET job = \'nao sei\',
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ')
+ 4 APPPATH\Controllers\Main.php(88): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET job = :jobs:,
+            datetime_updated = NOW()
+            WHERE id_jobs = :id_jobs:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:38:25 --> Undefined variable: job
+in APPPATH\Views\edit_job.php on line 22.
+ 1 APPPATH\Views\edit_job.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\edit_job.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_job.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('edit_job', [], true)
+ 5 APPPATH\Controllers\Main.php(75): view('edit_job', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJob('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:38:54 --> Trying to get property 'id_jobs' of non-object
+in APPPATH\Views\home.php on line 37.
+ 1 APPPATH\Views\home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_jobs\' of non-object', 'APPPATH\\Views\\home.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:40:29 --> Trying to get property 'jobs' of non-object
+in APPPATH\Views\home.php on line 31.
+ 1 APPPATH\Views\home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'jobs\' of non-object', 'APPPATH\\Views\\home.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:40:30 --> Trying to get property 'jobs' of non-object
+in APPPATH\Views\home.php on line 31.
+ 1 APPPATH\Views\home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'jobs\' of non-object', 'APPPATH\\Views\\home.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:41:04 --> Trying to get property 'id_jobs' of non-object
+in APPPATH\Views\home.php on line 45.
+ 1 APPPATH\Views\home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_jobs\' of non-object', 'APPPATH\\Views\\home.php', 45, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:41:26 --> Trying to get property 'id_jobs' of non-object
+in APPPATH\Views\home.php on line 45.
+ 1 APPPATH\Views\home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_jobs\' of non-object', 'APPPATH\\Views\\home.php', 45, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 07:41:27 --> Trying to get property 'id_jobs' of non-object
+in APPPATH\Views\home.php on line 45.
+ 1 APPPATH\Views\home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_jobs\' of non-object', 'APPPATH\\Views\\home.php', 45, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-29 07:46:43 --> mysqli_sql_exception: Unknown column 'job' in 'field list' in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            U...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            U...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            U...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(88): CodeIgniter\Database\BaseConnection->query('\r\n            U...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->editJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-29 07:46:43 --> Unknown column 'job' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            UPDATE jobs
+            SET job = \'8\',
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            UPDATE jobs
+            SET job = \'8\',
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            UPDATE jobs
+            SET job = \'8\',
+            datetime_updated = NOW()
+            WHERE id_jobs = NULL
+        ')
+ 4 APPPATH\Controllers\Main.php(88): CodeIgniter\Database\BaseConnection->query('
+            UPDATE jobs
+            SET job = :jobs:,
+            datetime_updated = NOW()
+            WHERE id_jobs = :id_jobs:
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->editJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 08:31:28 --> Undefined variable: job
+in APPPATH\Views\delete_job.php on line 21.
+ 1 APPPATH\Views\delete_job.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\delete_job.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\delete_job.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('delete_job', [], true)
+ 5 APPPATH\Controllers\Main.php(114): view('delete_job', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->deleteJob('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 08:35:22 --> Undefined variable: job
+in APPPATH\Views\delete_job.php on line 28.
+ 1 APPPATH\Views\delete_job.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\delete_job.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\delete_job.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('delete_job', [], true)
+ 5 APPPATH\Controllers\Main.php(114): view('delete_job', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->deleteJob('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

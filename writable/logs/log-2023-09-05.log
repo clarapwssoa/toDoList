@@ -1,0 +1,56 @@
+CRITICAL - 2023-09-05 06:54:04 --> Undefined offset: 0
+in APPPATH\Controllers\Main.php on line 111.
+ 1 APPPATH\Controllers\Main.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Main.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->deleteJob('19')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-05 07:49:44 --> mysqli_sql_exception: Table 'todo_list.clientes' doesn't exist in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            I...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            I...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            I...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(27): CodeIgniter\Database\BaseConnection->query('\r\n            I...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->novoCliente()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-05 07:49:44 --> Table 'todo_list.clientes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                \'Gustavo\',
+                \'gusta@gmail.com\'
+            )
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                \'Gustavo\',
+                \'gusta@gmail.com\'
+            )
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                \'Gustavo\',
+                \'gusta@gmail.com\'
+            )
+        ')
+ 4 APPPATH\Controllers\Main.php(27): CodeIgniter\Database\BaseConnection->query('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                :nome:,
+                :email:
+            )
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->novoCliente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

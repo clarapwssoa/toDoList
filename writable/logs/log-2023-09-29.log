@@ -1,0 +1,55 @@
+CRITICAL - 2023-09-29 18:54:10 --> Undefined property: stdClass::$status
+in APPPATH\Views\home.php on line 26.
+ 1 APPPATH\Views\home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status', 'APPPATH\\Views\\home.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 18:54:57 --> Undefined property: stdClass::$status
+in APPPATH\Views\home.php on line 26.
+ 1 APPPATH\Views\home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status', 'APPPATH\\Views\\home.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 18:54:58 --> Undefined property: stdClass::$status
+in APPPATH\Views\home.php on line 26.
+ 1 APPPATH\Views\home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status', 'APPPATH\\Views\\home.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 18:54:58 --> Undefined property: stdClass::$status
+in APPPATH\Views\home.php on line 26.
+ 1 APPPATH\Views\home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status', 'APPPATH\\Views\\home.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-29 18:54:59 --> Undefined property: stdClass::$status
+in APPPATH\Views\home.php on line 26.
+ 1 APPPATH\Views\home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status', 'APPPATH\\Views\\home.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,1641 @@
+ERROR - 2023-09-18 06:55:20 --> mysqli_sql_exception: Table 'todo_list.clientes' doesn't exist in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('\r\n            I...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            I...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            I...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('\r\n            I...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->novoCliente()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 06:55:20 --> Table 'todo_list.clientes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                \'maria\',
+                \'asdasd\'
+            )
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                \'maria\',
+                \'asdasd\'
+            )
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                \'maria\',
+                \'asdasd\'
+            )
+        ')
+ 4 APPPATH\Controllers\Main.php(28): CodeIgniter\Database\BaseConnection->query('
+            INSERT INTO clientes
+            VALUES(
+                0,
+                :username:,
+                :password:
+            )
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->novoCliente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 06:57:36 --> Invalid file: header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Main.php(11): view('header')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 06:57:56 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Main.php(12): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:02:52 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:03:13 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:05:12 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:07:45 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:07:46 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:09:29 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:13:53 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:13:54 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:15:10 --> Undefined variable: job
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:17:15 --> Invalid file: registers.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registers.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('registers', [], true)
+ 3 APPPATH\Controllers\Main.php(12): view('registers')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:17:24 --> Invalid file: registers.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registers.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('registers', [], true)
+ 3 APPPATH\Controllers\Main.php(12): view('registers')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:19:06 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:29:10 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:29:11 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:32:55 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:32:56 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:36:46 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 28.
+ 1 APPPATH\Views\home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 28, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:36:47 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 28.
+ 1 APPPATH\Views\home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 28, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:38:06 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:41:54 --> Undefined variable: job
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:43:29 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:43:32 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:43:37 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 15.
+ 1 APPPATH\Views\home.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 15, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:45:37 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 18.
+ 1 APPPATH\Views\home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 18, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:46:47 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 18.
+ 1 APPPATH\Views\home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 18, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:49:55 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 5.
+ 1 APPPATH\Views\home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 5, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:50:37 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 5.
+ 1 APPPATH\Views\home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 5, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:50:38 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 5.
+ 1 APPPATH\Views\home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 5, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:58:35 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 18.
+ 1 APPPATH\Views\home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 18, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:59:12 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 5.
+ 1 APPPATH\Views\home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 5, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:59:14 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 5.
+ 1 APPPATH\Views\home.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 5, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 08:00:16 --> Undefined variable: jobs
+in APPPATH\Views\home.php on line 18.
+ 1 APPPATH\Views\home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jobs', 'APPPATH\\Views\\home.php', 18, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('home')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 08:02:40 --> Undefined property: stdClass::$jobs
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$jobs', 'APPPATH\\Views\\home.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 08:03:51 --> Undefined property: stdClass::$jobs
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$jobs', 'APPPATH\\Views\\home.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 08:27:00 --> mysqli_sql_exception: Unknown column 'jobs' in 'field list' in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 08:27:00 --> Unknown column 'jobs' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 08:29:32 --> mysqli_sql_exception: Column 'jobs' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 08:29:32 --> Column 'jobs' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 08:29:45 --> mysqli_sql_exception: Column 'jobs' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 08:29:45 --> Column 'jobs' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 08:31:24 --> Undefined property: stdClass::$job
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$job', 'APPPATH\\Views\\home.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 08:59:35 --> mysqli_sql_exception: Column 'jobs' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 08:59:35 --> Column 'jobs' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 09:00:03 --> mysqli_sql_exception: Column 'jobs' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 09:00:03 --> Column 'jobs' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 09:00:49 --> mysqli_sql_exception: Column 'jobs' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 09:00:49 --> Column 'jobs' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:10:44 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:10:59 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:10:59 --> Undefined offset: 0
+in APPPATH\Controllers\Main.php on line 111.
+ 1 APPPATH\Controllers\Main.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Main.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->deleteJob('32')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:11:02 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:11:34 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 09:14:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 09:14:33 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:16:38 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 09:27:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 09:27:35 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:34:40 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:35:26 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 09:36:50 --> Trying to get property 'name' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 11:39:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 11:39:48 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:15:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `jobs_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:15:17 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `jobs_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:17:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `jobs_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:17:22 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `jobs_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(\'estudar\', NOW())')
+ 4 APPPATH\Controllers\Main.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:19:37 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:19:37 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, \'estudar\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, \'estudar\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, datetime_created) VALUES(NULL, \'estudar\', NOW())')
+ 4 APPPATH\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, datetime_created) VALUES(:user_id:, :jobs:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:20:17 --> mysqli_sql_exception: Column 'user_id' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:20:17 --> Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:20:25 --> mysqli_sql_exception: Column 'user_id' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:20:25 --> Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:21:49 --> mysqli_sql_exception: Column 'user_id' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:21:49 --> Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:23:41 --> mysqli_sql_exception: Column 'user_id' cannot be null in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:23:41 --> Column 'user_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', NULL, NOW())')
+ 4 APPPATH\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:23:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:23:46 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', \'12\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', \'12\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', \'12\', NOW())')
+ 4 APPPATH\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 12:25:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 12:25:26 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', \'12\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', \'12\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', \'12\', NOW())')
+ 4 APPPATH\Controllers\Main.php(36): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:34:49 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:36:06 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:36:08 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:37:28 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:38:15 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:38:16 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:38:52 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:38:53 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:44:22 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:44:51 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 9.
+ 1 APPPATH\Views\home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:47:01 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:47:13 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:47:39 --> Undefined property: stdClass::$user_id
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:48:08 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 12:49:28 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:05:00 --> Undefined variable: job
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: job', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:05:08 --> Trying to get property 'user_id' of non-object
+in APPPATH\Views\home.php on line 8.
+ 1 APPPATH\Views\home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_id\' of non-object', 'APPPATH\\Views\\home.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:10:36 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:11:42 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:12:13 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:31:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE) in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 13:31:52 --> Cannot add or update a child row: a foreign key constraint fails (`todo_list`.`jobs`, CONSTRAINT `FK_jobs_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'nao sei\', \'12\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'nao sei\', \'12\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'nao sei\', \'12\', NOW())')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:36:15 --> Undefined property: stdClass::$user_id
+in APPPATH\Controllers\Home.php on line 24.
+ 1 APPPATH\Controllers\Home.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Controllers\\Home.php', 24, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\Home->getAllJobs()
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:37:24 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:40:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18 VALUES('estudar', :user_id:, NOW())' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 13:40:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18 VALUES('estudar', :user_id:, NOW())' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) WHERE user_id = 18 VALUES(\'estudar\', :user_id:, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) WHERE user_id = 18 VALUES(\'estudar\', :user_id:, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) WHERE user_id = 18 VALUES(\'estudar\', :user_id:, NOW())')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) WHERE user_id = 18 VALUES(:jobs:, :user_id:, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:41:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':user_id:, NOW(), WHERE user_id = 18)' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 13:41:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':user_id:, NOW(), WHERE user_id = 18)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', :user_id:, NOW(), WHERE user_id = 18)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', :user_id:, NOW(), WHERE user_id = 18)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', :user_id:, NOW(), WHERE user_id = 18)')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, :user_id:, NOW(), WHERE user_id = 18)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:42:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18), NOW()' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 13:42:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18), NOW()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', WHERE user_id = 18), NOW()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', WHERE user_id = 18), NOW()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'estudar\', WHERE user_id = 18), NOW()')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, WHERE user_id = 18), NOW()', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:43:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18) VALUES('estudar', NOW()' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 13:43:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18) VALUES('estudar', NOW()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18) VALUES(\'estudar\', NOW()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18) VALUES(\'estudar\', NOW()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18) VALUES(\'estudar\', NOW()')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18) VALUES(:jobs:, NOW()', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:44:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18 VALUES('estudar', NOW()' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 13:44:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_id = 18 VALUES('estudar', NOW()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18 VALUES(\'estudar\', NOW()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18 VALUES(\'estudar\', NOW()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18 VALUES(\'estudar\', NOW()')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created)  WHERE user_id = 18 VALUES(:jobs:, NOW()', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 13:44:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projetos_clara\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\projetos_clara\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\projetos_clara\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\projetos_clara\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projetos_clara\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 13:44:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created)  VALUES(\'estudar\', 18, NOW()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created)  VALUES(\'estudar\', 18, NOW()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created)  VALUES(\'estudar\', 18, NOW()')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created)  VALUES(:jobs:, 18, NOW()', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:46:55 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:47:44 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:49:38 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:54:43 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 28.
+ 1 APPPATH\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:55:58 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:56:02 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:56:17 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:56:54 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:57:10 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:58:09 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:16:31 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Home.php on line 24.
+ 1 APPPATH\Controllers\Home.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Home.php', 24, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\Home->getAllJobs()
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 14:20:54 --> Trying to get property 'id' of non-object
+in APPPATH\Controllers\Home.php on line 24.
+ 1 APPPATH\Controllers\Home.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH\\Controllers\\Home.php', 24, [])
+ 2 APPPATH\Controllers\Home.php(10): App\Controllers\Home->getAllJobs()
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 16:36:03 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'user_todo_list'@'localhost' (using password: YES) in C:\xampp\htdocs\mc\todolist\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\mc\todolist\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'user_todo_list', Object(SensitiveParameterValue), 'todo_list', 3306, '', 0)
+#1 C:\xampp\htdocs\mc\todolist\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mc\todolist\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mc\todolist\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\mc\todolist\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\mc\todolist\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\mc\todolist\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\mc\todolist\app\Controllers\Register.php(39): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(898): App\Controllers\Register->do_register()
+#9 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\mc\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\mc\todolist\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\mc\todolist\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mc\todolist\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mc\todolist\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\mc\todolist\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\mc\todolist\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\mc\todolist\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\mc\todolist\app\Controllers\Register.php(39): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(898): App\Controllers\Register->do_register()
+#8 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\mc\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-18 16:36:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 3 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Register.php(39): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Register->do_register()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 16:38:51 --> mysqli_sql_exception: Unknown column 'datetime_created' in 'field list' in C:\xampp\htdocs\mc\todolist\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\mc\todolist\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO job...', 0)
+#1 C:\xampp\htdocs\mc\todolist\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO job...')
+#2 C:\xampp\htdocs\mc\todolist\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO job...')
+#3 C:\xampp\htdocs\mc\todolist\app\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO job...', Array)
+#4 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+#5 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\mc\todolist\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\mc\todolist\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-18 16:38:51 --> Unknown column 'datetime_created' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'fazer o jantar\', 1, NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'fazer o jantar\', 1, NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(\'fazer o jantar\', 1, NOW())')
+ 4 APPPATH\Controllers\Main.php(37): CodeIgniter\Database\BaseConnection->query('INSERT INTO jobs(jobs, user_id, datetime_created) VALUES(:jobs:, 1, NOW())', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Main->newJobSubmition()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 16:45:33 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Login.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 16:48:38 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 60.
+ 1 APPPATH\Views\home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 16:50:32 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 60.
+ 1 APPPATH\Views\home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 16:55:42 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 60.
+ 1 APPPATH\Views\home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:04:02 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 60.
+ 1 APPPATH\Views\home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [...], true)
+ 5 APPPATH\Controllers\Home.php(25): view('home', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:04:07 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 60.
+ 1 APPPATH\Views\home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [...], true)
+ 5 APPPATH\Controllers\Home.php(25): view('home', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:05:45 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 60.
+ 1 APPPATH\Views\home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [...], true)
+ 5 APPPATH\Controllers\Home.php(25): view('home', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:06:10 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 63.
+ 1 APPPATH\Views\home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [...], true)
+ 5 APPPATH\Controllers\Home.php(25): view('home', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:06:29 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 62.
+ 1 APPPATH\Views\home.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [...], true)
+ 5 APPPATH\Controllers\Home.php(25): view('home', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:07:37 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 62.
+ 1 APPPATH\Views\home.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:52:23 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\home.php on line 18.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(28): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:53:00 --> Undefined property: stdClass::$jobs
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jobs', 'APPPATH\\Views\\home.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:53:15 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\home.php on line 18.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:54:10 --> Attempt to read property "jobs" on array
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jobs" on array', 'APPPATH\\Views\\home.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:54:33 --> Attempt to read property "jobs" on array
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jobs" on array', 'APPPATH\\Views\\home.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:54:34 --> Attempt to read property "jobs" on array
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jobs" on array', 'APPPATH\\Views\\home.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:54:43 --> Attempt to read property "jobs" on array
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jobs" on array', 'APPPATH\\Views\\home.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:54:43 --> Attempt to read property "jobs" on array
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jobs" on array', 'APPPATH\\Views\\home.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:54:44 --> Attempt to read property "jobs" on array
+in APPPATH\Views\home.php on line 33.
+ 1 APPPATH\Views\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "jobs" on array', 'APPPATH\\Views\\home.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 17:58:48 --> Undefined variable $pager
+in APPPATH\Views\home.php on line 60.
+ 1 APPPATH\Views\home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\home.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
